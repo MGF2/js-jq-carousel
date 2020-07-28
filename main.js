@@ -26,6 +26,16 @@ $(document).ready(function() {
     $(this).addClass('active');
   });
 
+  // Slide con tasti
+  $(document).keydown( function (event) {
+
+    if (event.keyCode == 39) {
+      nextSlide();
+    } else if (event.keyCode == 37) {
+      prevSlide();
+    }
+  });
+
   // Funzioni
   function nextSlide() {
 
