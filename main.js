@@ -9,16 +9,6 @@ $(document).ready(function() {
 
   $('.nav > i').click(function() {
 
-    // var posizione = $(this).index();
-    // var activeImg = $('.images img.active');
-    // var activeDot = $('.nav i.active');
-    //
-    // activeImg.removeClass('active');
-    // activeDot.removeClass('active');
-    //
-    // $('img').eq(posizione).addClass('active');
-    // $(this).addClass('active');
-
     var posizione = $(this).index();
     $('.images img.active').removeClass('active');
     $('.nav i.active').removeClass('active');
