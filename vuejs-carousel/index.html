@@ -16,13 +16,21 @@
                     <i class="fas fa-angle-left"></i>
                 </div>
 
-                  <div class="images">
+                  <!-- <div class="images">
                     <img :src="images[counter]" alt="">
+                  </div> -->
+
+                  <!-- CON ARRAY DI OGGETTI -->
+                  <div class="images">
+                    <img :src="images[counter].src" :alt="images[counter].alt">
                   </div>
 
                 <div class="next" @click="next">
                     <i class="fas fa-angle-right"></i>
                 </div>
+            </div>
+            <div class="nav">
+                <i v-for="(image, index) in images" :class="(index == counter) ? 'active' : '' " @click="change(index)" class="fas fa-circle"></i>
             </div>
         </div>
 
